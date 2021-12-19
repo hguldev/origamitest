@@ -1,6 +1,12 @@
 # Origami Coding Test
 
- A simple Checkout test for ITV.
+ A simple Checkout test for Origami.
+ 
+ Additional considerations:
+ 
+ add() and find() methods are using synchronised to stop multiple threads from interacting with the map at the same time. 
+ However, this could potentially be improved upon by locking the map when it is being accessed. This would allow threads
+  to find items in the map concurrently.
  
  ## Build and Run
  Navigate to project root
